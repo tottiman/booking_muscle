@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper{
+  display: flex;
+  height: 100vh;
+}
+
+.sideBar{
+  width: 250px;
+
+  &__header{
+    height: 70px;
+    background-color: navy;
+    text-align: center;
+    
+  }
+  &__user-profile{
+    height: 200px;
+    background-color: red;
+    
+
+  }
+  &__user-header{
+    display: block;
+    padding-bottom: 12px;
+    border-bottom: solid 1px #EAEAEA;
+
+  }
+  &__user-icon{
+    width: 48px;
+    height: 48px;
+    margin: auto;
+    box-sizing: border-box;
+    display: block;
+
+  }
+  &__user-info{
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+
+  }
+  &__user-name{
+    font-size: 14px;
+    line-height: 1em;
+    margin-top: 14px;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-weight: 700;
+    height: 14px;
+    box-sizing: border-box;
+    display: block;
+
+  }
+  &__user-box{
+    font-size: 10px;
+    color: #B3B3B3;
+    width: 80%;
+    margin: 6px auto 0;
+    height: 28px;
+    word-break: break-word;
+    box-sizing: border-box;
+    display: block;
+
+  }
+
+  &__stream{
+    height: calc(100vh - 270px);
+    background-color: black;
+
+
+  }
+  &__stream-tile{
+
+  }
+  &__stream-icon{
+
+  }
+  &__stream-info{
+
+  }
+}
+
+.mainbar{
+
+
+
+
+}
