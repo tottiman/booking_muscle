@@ -62,5 +62,6 @@ gem 'momentjs-rails'
 gem 'devise'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'fullcalendar-rails'
 
 

@@ -1,0 +1,46 @@
+.AccountPage{
+  &__title{
+    color: red;
+  }
+  &__form{
+
+  }
+  &__inner--icon{
+
+  }
+  &__inner--icon__label{
+
+  }
+  &__inner--icon__input{
+    margin: auto;
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
+    overflow: hidden;
+    position: relative;
+
+  }
+  &__inner--icon__input__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__inner--icon__input__image2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .Button UserButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    // 解決方法(追加)
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
+    font-size: 0px;
+    // 解決方法(ここまで)
+    opacity: 0;
+    cursor: pointer;
+  }
+}

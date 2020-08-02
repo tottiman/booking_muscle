@@ -1,3 +1,8 @@
+
+//= require_tree .
+//= require fullcalendar
+//= require_self
+
 @import "reset";
 @import "modules/bookings";
 @import "font-awesome-sprockets";
@@ -5,5 +10,3 @@
 @import "modules/user";
 @import "modules/flash";
 
-//= require fullcalendar
-//= require_tree .
