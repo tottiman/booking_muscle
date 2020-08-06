@@ -1,0 +1,13 @@
+.Form__contents
+- @tweets.each do |tweet|
+  .Form__content
+    = current_user.name
+    = form_for Tweet.new do |f| 
+      = f.text_field :text, class: 'Form__inputContent', placeholder: 'type a message'
+      = f.submit 'Tips', class: 'Form__submit'
+     
+  
+    
+  
+
+    

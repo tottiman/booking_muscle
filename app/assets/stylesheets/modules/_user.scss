@@ -1,46 +1,83 @@
 .AccountPage{
+  background-color: #EFEFEF;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  
+  
+  
   &__title{
-    color: red;
+   height: 200px;
+   width: 100%;
+   font-size: 30px;
+   color: orange;
+   display: grid;
+   place-items: center;
+   
   }
+  
+  h2{
+    height: 40px;
+    font-size: 40px;
+    color: orange;
+    margin-top: 10px;
+    
+  }
+
+  h5{
+    
+  }
+
   &__form{
+    
+    
+    
 
   }
   &__inner--icon{
+    
+    
+    
 
   }
   &__inner--icon__label{
-
+    
+    
   }
   &__inner--icon__input{
-    margin: auto;
-    width: 180px;
-    height: 180px;
-    border-radius: 100px;
-    overflow: hidden;
-    position: relative;
+    
+    
+   
 
   }
   &__inner--icon__input__image {
-    position: absolute;
-    top: 0;
-    left: 0;
+    
+    
   }
   &__inner--icon__input__image2 {
-    position: absolute;
-    top: 0;
-    left: 0;
+  
   }
-  .Button UserButton {
-    position: absolute;
-    top: 0;
-    right: 0;
-    // 解決方法(追加)
-    width: 180px;
-    height: 180px;
-    border-radius: 100px;
-    font-size: 0px;
-    // 解決方法(ここまで)
-    opacity: 0;
-    cursor: pointer;
+  &__inner--user-form{
+    color: orange;
+  }
+  .FormField{
+    color: orange;
+    font-size: 20px;
+    
+  }
+  
+  &__label--normal{
+    
+  }
+  &__input--normal{
+
+  }
+  .Button {
+    font-size: 15px;
+  
+   
+  }
+  .UserButton{
+
   }
 }

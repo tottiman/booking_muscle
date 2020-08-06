@@ -12,39 +12,52 @@
 
   &__header{
     height: 70px;
-    background-color: navy;
+    font-weight: bold;
+    background-color: #EFEFEF;
     text-align: center;
+    padding-top: 20px;
+
     
   }
   &__user-profile{
     height: 200px;
-    background-color: red;
-    
+    background-color: #EFEFEF;  
 
   }
+
+
+
   &__user-header{
     display: block;
+    
     padding-bottom: 12px;
-    border-bottom: solid 1px #EAEAEA;
+    
 
   }
   &__user-icon{
     width: 48px;
-    height: 48px;
+    height: 70px;
     margin: auto;
     box-sizing: border-box;
     display: block;
+}
+  
 
-  }
+
+
+    
   &__user-info{
     width: 100%;
+    height: 130px;
     text-align: center;
     box-sizing: border-box;
     display: block;
+    padding: 10px;
+    
 
   }
   &__user-name{
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1em;
     margin-top: 14px;
     margin-left: 8px;
@@ -56,8 +69,7 @@
 
   }
   &__user-box{
-    font-size: 10px;
-    color: #B3B3B3;
+    font-size: 12px;
     width: 80%;
     margin: 6px auto 0;
     height: 28px;
@@ -68,25 +80,246 @@
   }
 
   &__stream{
+    overflow: scroll;
     height: calc(100vh - 270px);
-    background-color: black;
+    background-color: #EFEFEF;
 
 
   }
   &__stream-tile{
+    color: #ffffff;
+    background-color: orange;
+    padding: 15px;
+    margin: 0 30px 30px 30px;
+    display: flex;
+
 
   }
   &__stream-icon{
+
+    
 
   }
   &__stream-info{
 
   }
+
 }
+.mainBar{
 
-.mainbar{
+  &__header{
+   
+    height: 70px;
+    width: calc(100vw - 250px) ;
+    background-color:#EFEFEF;
+  
+  }
+  &__board{
+    background-color:#EFEFEF;
+  
+
+  }
+  &__welcome{
+    font-size: 40px; 
+    font-weight: bold;
+    height: 70px;
+    display: flex;
+    text-align: center;
+    background-color:#EFEFEF;
+    
+  }
+  .li0{
+    margin: 0 45px;
+  }
+  
+
+  &__menu{
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  &__boxes{
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    height: 220px;
+    width: 480px;
+    color: #ffffff;
+    background-color: orange;
+  }
+  &__box1{
+    padding: 20px;
+    
+  }
+        
+  &__box2{
+
+  }
+        
+  &__box3{
+
+  }
+  .li1{
+    margin: 15px;
+
+  }
+        
+  &__score-form{
+    font-size: 18px;
+    font-weight: bold;
+    height: 220px;
+    width: 540px;
+    background-color: orange;
+    color: #ffffff;
+    display: block;
+
+  }
+
+  &__inputscore{
+    display: flex;
+   
+    
+    
+  }
+  &__inputscore2{
+   
+    width: 180px;
+  }
+
+  &__inputscore3{
+    
+    width: 180px;
+    
+  }
+  &__inputlist{
+   
+    width: 180px;
+    
+  
+  }
+  .wod{
+    width: 60px;
+    margin: 5px;
+    
+  }
+       
+  &__inputscore{
+
+  }
+        
+  &__input-record{
+    
+    margin-top: 15px;
+    
+
+  }
+          
+  
+  &__input-memo{
+    margin-top: 15px;
+
+  }
+         
+
+  &__contents{
+    height: calc(100vh - 360px);
+    background-color: #EFEFEF;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  &__ranking{
+
+    font-size: 30px;
+    width: 270px;
+    margin-top: 30px;
+    overflow: scroll;
+  
+
+  }
+  &__ranking-box{
+    font-size: 15px;
+    background-color: #EFEFEF;
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 30px;
+    
+    
+
+  }
+  &__ranking-pic{
+    height: 65px;
+    width: 65px;
+    background-color: gold;
+    
+
+  }
+  &__ranking-info{
+    background-color: greenyellow;
+    width: 170px;
+
+
+  }
+  &__ranking-name{
+    height: 25px;
+  
+    background-color: deepskyblue;
+
+  }
+
+  &__ranking-score{
+    height: 40px;
+
+    background-color: floralwhite;
 
 
 
+  }
+
+  &__tips{
+    font-size: 30px;
+    width: 270px;
+    margin-top: 30px;
+    background-color:#EFEFEF;
+    overflow: scroll;
+
+  }
+  .input-space{
+    height: 1em;
+    width: 240px;
+  }
+  .submit-btn{
+    font-size: 0.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    background-color: #248;
+    color: #ffffff;
+    border-style: none;
+
+  }
+
+
+  &__insta{
+    font-size: 30px;
+    width: 270px;
+    margin-top: 30px;
+    background-color: #EFEFEF;
+
+  }
+  &__footer{
+
+  }
+  &__info{
+
+  }
+  &__sns{
+
+  }
+
+  &__link-btn{
+    margin-top: 10px;
+  }
 
 }

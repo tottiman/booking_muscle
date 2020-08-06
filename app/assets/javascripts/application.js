@@ -1,6 +1,8 @@
 //= require jquery
 //= require moment
 //= require fullcalendar
+//= require rails-ujs
+//= require_tree .
 
 $(function () {
   // 画面遷移を検知

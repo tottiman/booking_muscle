@@ -1,22 +1,76 @@
 .sideBar
   .sideBar__header
-    booking_muscle
+    booking_muscle.com
   .sideBar__user-profile 
 
     .sideBar__user-header
 
       .sideBar__user-icon
-        □
+        = image_tag '/toshiki-no-pic.jpg', alt: '失敗', height: '80px', width: '80px', class: 'pic'
       .sideBar__user-info
         .sideBar__user-name
-          toshiki.kato
+          = current_user.name
+          
         .sideBar__user-box
-          kitahama-box
+          = current_user.profile
+          
+       
 
   .sideBar__stream
     .sideBar__stream-tile
+      □
       .sideBar__stream-icon
-      .sideBar__stream-info_
+      .sideBar__stream-info
+        = link_to new_event_path do 
+          Reservation
+        
+
+    .sideBar__stream-tile
+      .sideBar__stream-icon
+        □
+      .sideBar__stream-info
+        Reserved class
+
+    .sideBar__stream-tile
+      .sideBar__stream-icon
+        □
+      .sideBar__stream-info
+        Event
+
+    .sideBar__stream-tile
+      .sideBar__stream-icon
+        □
+      .sideBar__stream-info
+        Drop in
+
+    .sideBar__stream-tile
+      .sideBar__stream-icon
+        □
+      .sideBar__stream-info
+        Reserved class
+
+    .sideBar__stream-tile
+      .sideBar__stream-icon
+        □
+      .sideBar__stream-info
+        Ticket
+
+    .sideBar__stream-tile
+      .sideBar__stream-icon
+        □
+      .sideBar__stream-info
+        Regulation
+    
+    .sideBar__stream-tile
+      .sideBar__stream-icon
+        □
+      .sideBar__stream-info
+        = link_to edit_user_path(current_user) do
+          Member Info
+
+        
+        
+        
       
 
   

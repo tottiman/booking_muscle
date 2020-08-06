@@ -1,0 +1,106 @@
+.mainBar
+  .mainBar__header
+  .mainBar__board
+    .mainBar__welcome
+      .li0 Hi! 
+      = current_user.name 
+      .li0 Let's do our best!
+
+    .mainBar__menu
+      .mainBar__boxes
+        .mainBar__box1
+          07/29 CF:Squat snatch
+          .li1 WOD1: 15min Spuat snatch practice
+          .li1 WOD2: 7min EMOTM 1 Squat snatch + 2 OH squat
+          .li1 WOD3: 8min EMOTM
+        -#.mainBar__box2
+          CC:Squat snatch
+          .li WOD1: 15min Spuat snatch practice
+          .li WOD2: 7min EMOTM 1 Squat snatch + 2 OH squat
+          .li WOD3: 8min EMOTM
+        -#.mainBar__box3
+          APT:Squat snatch
+          .li WOD1: 15min Spuat snatch practice
+          .li WOD2: 7min EMOTM 1 Squat snatch + 2 OH squat
+          .li WOD3: 8min EMOTM
+
+      .mainBar__score-form
+        SCORE
+        .mainBar__inputscore
+      
+          .mainBar__inputlist
+            WOD1
+            %input{class: "wod", placeholder:"2", type:"number"}rds
+            
+          .mainBar__inputlist
+            WOD2
+            %input{class: "wod", placeholder:"11", type:"number"}rds 
+            
+          .mainBar__inputlist 
+            WOD3
+            %input{class: "wod",placeholder:"8", type:"number"}rds 
+           
+        .mainBar__inputscore2
+      
+          .mainBar__input-record
+            PR
+            %input{class: "wod",placeholder:"Event", type:"text"}
+            -#%input{class: "wod",placeholder:"kg", type:"text"}kg
+        .mainBar__inputscore3
+    
+          .mainBar__input-memo
+            Memo
+            %input{class: "wod",placeholder:"Memo", type:"text"}
+
+
+  .mainBar__contents
+    .mainBar__ranking
+      Today's Ranking
+      .mainBar__ranking-box
+        
+        .mainBar__ranking-pic
+          = image_tag '/toshiki-no-pic.jpg', alt: '失敗', height: '65px', width: '65px', class: 'pic'
+        .mainBar__ranking-info
+          .mainBar__ranking-name
+            No.1 toshiki
+          .mainBar__ranking-score
+            WOD1 5rds + 15
+      .mainBar__ranking-box
+        
+        .mainBar__ranking-pic
+          = image_tag '/rie-san.jpg', alt: '失敗', height: '65px', width: '65px', class: 'pic'
+        .mainBar__ranking-info
+          .mainBar__ranking-name
+            No.2 rie
+          .mainBar__ranking-score
+            WOD1 4rds + 10
+      .mainBar__ranking-box
+        .mainBar__ranking-pic
+          = image_tag '/naveth-san.jpg', alt: '失敗', height: '65px', width: '65px', class: 'pic'
+        .mainBar__ranking-info
+          .mainBar__ranking-name
+            No.3 kanta
+          .mainBar__ranking-score
+            WOD1 3rds + 22
+  
+
+    .mainBar__tips
+      .mainBar__tip
+        Today' Tips
+        .mainBar__ranking-box
+          .mainBar__ranking-pic
+            = image_tag '/toshiki-no-pic.jpg', alt: '失敗', height: '65px', width: '65px', class: 'pic'
+          .mainBar__ranking-info
+            .mainBar__ranking-name
+              = current_user.name 
+            .mainBar__ranking-score
+        
+        = link_to tweets_path, class: 'link-btn' do
+          投稿する 
+      
+    .mainBar__insta
+      （instaAPI連携）
+
+  .mainBar__footer
+    .mainBar__info
+    .mainBar__sns
